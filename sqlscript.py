@@ -1,10 +1,9 @@
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, Integer, String, DateTime
-from sqlalchemy import Index
 from sqlalchemy import create_engine
 import datetime
 from sqlalchemy.orm import Session
-from werkzeug.security import generate_password_hash,check_password_hash
+from werkzeug.security import generate_password_hash
 
 engine = create_engine("sqlite:///sample.db", echo=True)
 
