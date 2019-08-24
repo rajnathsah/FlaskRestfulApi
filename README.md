@@ -1,7 +1,8 @@
 # Flask RESTful Api
-Flask-RESTful is an extension for flask that adds supports for quickly building REST APIs.
 
-## Sample Flask RESTful Api example with database connectivity and basic authentication
+### Sample Flask RESTful Api example with database connectivity and basic authentication
+
+Flask-RESTful is an extension for flask that adds supports for quickly building REST APIs.
 
 1. Install required depencies using 
     ```
