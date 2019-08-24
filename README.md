@@ -15,19 +15,21 @@ Flask-RESTful is an extension for flask that adds supports for quickly building 
     python app.py
     ```
 5. Open Postman and enter url http://127.0.0.1:5000/employee/api/v1.0/all, In authorization tab, select basic auth and enter username and password. Hit send button to get all the employee data.
-6. To add one or more employee data enter url http://127.0.0.1:5000/employee/api/v1.0/all, In authorization tab, select basic auth and enter username and password. Under body tab, select raw and change data as JSON(application/json) and enter data in below format.
+6. To add one or more employee data enter url http://127.0.0.1:5000/employee/api/v1.0/all, In authorization tab, select basic auth and enter username and password. Under body tab, select raw and change data as JSON(application/json) and enter data in below format.  
 
 Add two employee data  
-  {
-      "employee": [
-          {
-              "employee_name": "Rohan",            
-              "employee_sal": 10001
-          },
-          {
-              "employee_name": "Ram",            
-              "employee_sal": 15001
-          }
-      ]
-  }
+    ```
+      {
+          "employee": [
+              {
+                  "employee_name": "Rohan",            
+                  "employee_sal": 10001
+              },
+              {
+                  "employee_name": "Ram",            
+                  "employee_sal": 15001
+              }
+          ]
+      }
+    ```
 7. Repeat step 5 to view data.
