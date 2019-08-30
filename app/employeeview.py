@@ -1,10 +1,10 @@
 from flask_restful import Resource, reqparse
 from flask_httpauth import HTTPBasicAuth
 from werkzeug.security import check_password_hash
-from dbconnection import getEngine
+from app.dbconnection import getEngine
 from flask import jsonify
 from sqlalchemy.orm import Session
-from employee import *
+from app.employee import *
 
 auth = HTTPBasicAuth()
 parser = reqparse.RequestParser()
