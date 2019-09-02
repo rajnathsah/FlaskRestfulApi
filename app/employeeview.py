@@ -8,7 +8,7 @@ from app.employee import *
 
 auth = HTTPBasicAuth()
 parser = reqparse.RequestParser()
-parser.add_argument("employee",type=dict,action=True)
+parser.add_argument("employee",type=dict,action="append")
 
 @auth.verify_password
 def verify_password(username, password):
