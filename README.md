@@ -42,4 +42,8 @@ docker run -p 5000:5000 <image name>
 ```
 10. Repeat step 5  
 
-Note: If you're using docker-toolbox, then you might need to use docker-machine ip default to get the IP.
+Note: If you're using docker-toolbox, then you might need to use below command to get the IP.
+```
+docker-machine ip default
+```
+
