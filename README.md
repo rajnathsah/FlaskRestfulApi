@@ -14,8 +14,8 @@ Flask-RESTful is an extension for flask that adds supports for quickly building 
     ```
     python run.py
     ```
-5. Open Postman and enter url http://127.0.0.1:5000/employee/api/v1.0/all, In authorization tab, select basic auth and enter username and password. Hit send button to get all the employee data.
-6. To add one or more employee data enter url http://127.0.0.1:5000/employee/api/v1.0/all, In authorization tab, select basic auth and enter username and password. Under body tab, select raw and change data as JSON(application/json) and enter data in below format.
+5. Open Postman and enter url http://0.0.0.0:5000/employee/api/v1.0/all, In authorization tab, select basic auth and enter username and password. Hit send button to get all the employee data.
+6. To add one or more employee data enter url http://0.0.0.0:5000/employee/api/v1.0/all, In authorization tab, select basic auth and enter username and password. Under body tab, select raw and change data as JSON(application/json) and enter data in below format.
 Sample data for adding two employee data.  
     ```
       {
@@ -32,3 +32,14 @@ Sample data for adding two employee data.
       }
     ```  
 7. Repeat step 5 to view data.
+8. You can also build docker image using dockerfile which will setup all pre-requisite.
+```
+docker build . -t <image name>
+```
+9. Run docker image usin below command
+```
+docker run -p 5000:5000 <image name>
+```
+10. Repeat step 5  
+
+Note: If you're using docker-toolbox, then you might need to use docker-machine ip default to get the IP.
