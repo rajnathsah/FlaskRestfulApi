@@ -33,12 +33,16 @@ Sample data for adding two employee data.
     ```  
 7. Repeat step 5 to view data.
 8. You can also build docker image using dockerfile which will setup all pre-requisite.
-```
+```dockerfile
 docker build . -t <image name>
 ```
 9. Run docker image usin below command
-```
+```dockerfile
 docker run -p 5000:5000 <image name>
+```
+In case you want to detach terminal then use below command
+```dockerfile
+docker run -d -p 5000:5000 <image name>
 ```
 10. Repeat step 5  
 
